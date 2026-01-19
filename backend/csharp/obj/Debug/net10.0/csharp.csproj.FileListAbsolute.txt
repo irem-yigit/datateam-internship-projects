@@ -32,3 +32,6 @@ C:\Users\yigit\projects\case-studies\datateam-internship-projects\backend\csharp
 C:\Users\yigit\projects\case-studies\datateam-internship-projects\backend\csharp\obj\Debug\net10.0\csharp.pdb
 C:\Users\yigit\projects\case-studies\datateam-internship-projects\backend\csharp\obj\Debug\net10.0\csharp.genruntimeconfig.cache
 C:\Users\yigit\projects\case-studies\datateam-internship-projects\backend\csharp\obj\Debug\net10.0\ref\csharp.dll
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\backend\csharp\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\backend\csharp\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\backend\csharp\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
