@@ -11,6 +11,8 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+app.MapControllers();
+
 app.MapGet("/", () =>
 {
     return "Welcome to BookerApp API!";
