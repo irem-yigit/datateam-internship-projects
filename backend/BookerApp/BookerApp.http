@@ -1,0 +1,6 @@
+@BookerApp_HostAddress = http://localhost:5166
+
+GET {{BookerApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
