@@ -21,11 +21,7 @@ public class UserController : ControllerBase
     [HttpGet]
     public IActionResult GetAllUsers()
     {
-        var users = new List<User>
-        {
-            new User { Id = 1, Username = "iremyigit", Email = "iremyigit@example.com", Password = "12345"}
-        };
-        return Ok(users);
+        return Ok(_userService.GetAllUsers());
     }
 
     //Get user by id
@@ -42,11 +38,10 @@ public class UserController : ControllerBase
     [HttpPost]
     public IActionResult CreateUser ([FromBody] User user)
     {
-        return Ok(new 
-        {
-            message = "User created",
-            data = user 
-        });
+        var createdUser = _userService.Create(user);
+        return CreatedAtAction(nameof(GetUserById),
+            new { id = createdUser.Id },
+            createdUser);
     }
 
     //Update a user
