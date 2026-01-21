@@ -4,6 +4,8 @@ using System.Runtime.Versioning;
 using System.Data.Common;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using BookerApp.Services;
+
 
 namespace BookerApp.Controllers;
 
@@ -12,7 +14,7 @@ namespace BookerApp.Controllers;
 public class UserController : ControllerBase
 {
     private readonly IUserService _userService;
-    public UsersController(IUserService userService)
+    public UserController(IUserService userService)
     {
         _userService = userService;
     }
@@ -62,6 +64,7 @@ public class UserController : ControllerBase
             return NotFound("User not found");
 
         return Ok(new { message = "User deleted successfully" });
+
     }
 }
 
