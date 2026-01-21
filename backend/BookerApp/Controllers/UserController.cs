@@ -11,6 +11,12 @@ namespace BookerApp.Controllers;
 [Route("api/users")]
 public class UserController : ControllerBase
 {
+    private readonly IUserService _userService;
+    public UsersController(IUserService userService)
+    {
+        _userService = userService;
+    }
+
     //Get all users 
     [HttpGet]
     public IActionResult GetUsers()
@@ -32,6 +38,30 @@ public class UserController : ControllerBase
             message = "User created",
             data = user 
         });
+    }
+
+    //Update a user
+    [HttpPut("{id}")]
+    public IActionResult UpdateUser(int id, [FromBody] User user)
+    {
+        var updatedUser = _userService.Update(id, user);
+
+        if (updatedUser == null)
+            return NotFound("User not found");
+        return Ok(updatedUser);
+        
+    }
+
+    //Delete a user by id
+    [HttpDelete("{id}")]
+    public IActionResult DeleteUser (int id)
+    {
+        var isDeleted = _userService.Delete(id);
+
+        if (!isDeleted)
+            return NotFound("User not found");
+
+        return Ok(new { message = "User deleted successfully" });
     }
 }
 
