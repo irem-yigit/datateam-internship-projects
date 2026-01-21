@@ -6,9 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using BookerApp.Services;
 
-
 namespace BookerApp.Controllers;
-
 [ApiController]
 [Route("api/users")]
 public class UserController : ControllerBase
@@ -21,14 +19,23 @@ public class UserController : ControllerBase
 
     //Get all users 
     [HttpGet]
-    public IActionResult GetUsers()
+    public IActionResult GetAllUsers()
     {
         var users = new List<User>
         {
             new User { Id = 1, Username = "iremyigit", Email = "iremyigit@example.com", Password = "12345"}
         };
-
         return Ok(users);
+    }
+
+    //Get user by id
+    [HttpGet("{id}")]
+    public IActionResult GetUserById(int id)
+    {
+        var user = _userService.GetAllUsers().FirstOrDefault(u => u.Id == id);
+        if (user == null)
+            return NotFound("User not found");
+        return Ok(user);
     }
 
     //Add a new user
