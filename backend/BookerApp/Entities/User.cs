@@ -1,8 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace BookerApp.Models
 {
     public class User
     {
-        public Long Id { get;set;}
+        public long Id {get;set;}
 
         [Required(ErrorMessage = "Username cannot be blank")]
         [StringLength(50, MinimumLength = 2, 

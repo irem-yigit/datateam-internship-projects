@@ -4,7 +4,7 @@ namespace BookerApp.Models
 {
     public class Book
     {
-        public Long Id {get; set;}
+        public long Id {get;set;}
         
         [Required(ErrorMessage = "Title cannot be blank")]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Title must be between 2 and 50 characters")]
