@@ -5,19 +5,29 @@ public class UserService :IUserService
 {
     private static List<User> _users = new();     
 
+    //Get all users 
     public List<User> GetAllUsers()
     {
         return _users;
     }
 
-    public User Create(User user)
+    //Get user by id
+    public User GetUserById(int id)
+    {
+        var user = _users.FirstOrDefault(u => u.Id == id);
+        return user;
+    }
+
+    //Add a new user
+    public User CreateUser(User user)
     {
         user.Id = _users.Count + 1;
         _users.Add(user);
         return user;
     }
 
-    public User Update(int id, User user)
+    //Update a user
+    public User UpdateUser(int id, User user)
     {
         var existing = _users.FirstOrDefault(u => u.Id == id);
         if (existing == null) return null;
@@ -27,7 +37,8 @@ public class UserService :IUserService
         return existing;
     }
 
-    public bool Delete(int id)
+    //Delete a user by id
+    public bool DeleteUser(int id)
     {
         var user = _users.FirstOrDefault(u => u.Id == id);
         if (user == null) return false;
@@ -35,5 +46,4 @@ public class UserService :IUserService
         _users.Remove(user);
         return true;
     }
-
 }

@@ -28,7 +28,6 @@ public class UserController : ControllerBase
     [HttpGet("{id}")]
     public IActionResult GetUserById(int id)
     {
-        var user = _userService.GetAllUsers().FirstOrDefault(u => u.Id == id);
         if (user == null)
             return NotFound("User not found");
         return Ok(user);
@@ -53,7 +52,6 @@ public class UserController : ControllerBase
         if (updatedUser == null)
             return NotFound("User not found");
         return Ok(updatedUser);
-        
     }
 
     //Delete a user by id
@@ -66,6 +64,5 @@ public class UserController : ControllerBase
             return NotFound("User not found");
 
         return Ok(new { message = "User deleted successfully" });
-
     }
 }
