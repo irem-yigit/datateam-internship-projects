@@ -3,6 +3,18 @@ using BookerApp.Models;
 namespace BookerApp.Services;
 public class UserService :IUserService
 {
+    private readonly AppDbContext _context;
+
+    public UserService(AppDbContext context)
+    {
+        _context = context;
+    }
+
+    public async Task<List<Users>> GetAllAsync()
+    {
+        return await _context.Users.ToListAsync();
+    }
+
     private static List<User> _users = new();     
 
     //Get all users 
