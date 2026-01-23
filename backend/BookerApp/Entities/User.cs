@@ -9,15 +9,15 @@ namespace BookerApp.Models
         [Required(ErrorMessage = "Username cannot be blank")]
         [StringLength(50, MinimumLength = 2, 
             ErrorMessage = "Username must be between 2 and 50 characters")]
-        public String Username { get;set;}
+        public string Username { get;set;}
         
         [Required(ErrorMessage = "Email cannot be blank")]
         [EmailAddress]
-        public String Email { get;set;}
+        public string Email { get;set;}
 
         [Required(ErrorMessage = "Password cannot be blank")]
         [MinLength(6)]  
-        public String Password { get;set;}
+        public string Password { get;set;}
 
     }
 }
