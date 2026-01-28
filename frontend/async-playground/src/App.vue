@@ -82,15 +82,20 @@ async function loadParallel() {
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div style="padding: 20px">
+    <h1>Async Playground (Vue)</h1>
+
+    <button @click="loadWithCallback">Callback</button>
+    <button @click="loadWithPromise">Promise</button>
+    <button @click="loadWithAsync">Async / Await</button>
+
+    <br /><br />
+
+    <button @click="loadSerial">Serial Request</button>
+    <button @click="loadParallel">Parallel Request</button>
+
+    <pre style="margin-top: 20px">{{ output }}</pre>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
