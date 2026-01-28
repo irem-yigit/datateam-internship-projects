@@ -24,6 +24,22 @@ function loadWithCallback() {
   });
 }
 
+/* ---------------------------------
+   PROMISE
+----------------------------------*/
+function getUsersPromise() {
+  return fetch("https://jsonplaceholder.typicode.com/users")
+    .then(res => res.json());
+}
+
+function loadWithPromise() {
+  getUsersPromise()
+    .then(users => print("PROMISE RESULT", users))
+    .catch(err => console.error(err));
+}
+
+
+
 </script>
 
 <template>
