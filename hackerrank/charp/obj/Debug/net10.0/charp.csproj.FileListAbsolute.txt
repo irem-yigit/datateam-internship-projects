@@ -1,0 +1,15 @@
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\bin\Debug\net10.0\charp.exe
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\bin\Debug\net10.0\charp.deps.json
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\bin\Debug\net10.0\charp.runtimeconfig.json
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\bin\Debug\net10.0\charp.dll
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\bin\Debug\net10.0\charp.pdb
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\obj\Debug\net10.0\charp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\obj\Debug\net10.0\charp.AssemblyInfoInputs.cache
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\obj\Debug\net10.0\charp.AssemblyInfo.cs
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\obj\Debug\net10.0\charp.csproj.CoreCompileInputs.cache
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\obj\Debug\net10.0\charp.sourcelink.json
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\obj\Debug\net10.0\charp.dll
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\obj\Debug\net10.0\refint\charp.dll
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\obj\Debug\net10.0\charp.pdb
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\obj\Debug\net10.0\charp.genruntimeconfig.cache
+C:\Users\yigit\projects\case-studies\datateam-internship-projects\hackerrank\charp\obj\Debug\net10.0\ref\charp.dll
