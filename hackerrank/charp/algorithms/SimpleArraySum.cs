@@ -1,16 +1,29 @@
-using System;
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
 
-public class SimpleArraySum
+class Result
 {
-    public static void Run()
-    {
-        int n = int.Parse(Console.ReadLine());
-        int[] arr = Console.ReadLine()
-            .Split(' ')
-            .Select(int.Parse)
-            .ToArray();
 
-        Console.WriteLine(arr.Sum());
+    public static int SimpleArraySum(List<int> ar)
+    {
+        int sum = 0;
+        
+        foreach(var n in ar){
+            sum += n;
+        }
+        return sum;
+
     }
+
 }
