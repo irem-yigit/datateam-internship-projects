@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace BookerApp.Entities;
+namespace BookerApp.DTOs.Request;
 public class BookRequestDTO
 {
     [Required(ErrorMessage = "Title cannot be blank")]
